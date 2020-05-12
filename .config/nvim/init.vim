@@ -46,8 +46,7 @@ map <Leader>w :w<CR>
 map <Leader>f :tag<space>
 map <Leader>so :w<CR>:so ~/.config/nvim/init.vim<CR>
 map <Leader>ta :tabe ~/Code/Angular/treatanyone_app<CR>
-
-
+nmap mq :q<cr>
 imap jj <ESC>
 imap kk <ESC>:w<CR>
 
@@ -60,7 +59,6 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-nmap tt :tabnext<cr>       				"Move to next tab
+nmap tn :tabnext<cr>       				"Move to next tab
 nmap tp :tabprev<cr>       				"Move to previous tab
 nmap <C-t> :tabnew<cr>						"Open new tab
-nmap <Leader>q :q<cr>					"Open new tab
