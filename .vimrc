@@ -32,8 +32,8 @@ nmap <C-L> <C-W><C-L>					"Move right
 nmap <C-Tab> :tabnext<cr>				"Move to next tab 
 nmap <C-S-Tab> :tabprev<cr>				"Move to previous tab 
 "--------------Mappings--------------"
-map <Leader>ev :tabedit ~/dotfiles/.vimrc<cr>
-map <Leader>aa :tabedit ~/dotfiles/.aliases<cr>
+map <Leader>ev :tabedit ~/.vimrc<cr>
+map <Leader>aa :tabedit ~/.aliases<cr>
 map <Leader><space> :nohlsearch<cr>
 map <Leader>f :tag<space>
 map <Leader>ls :ls<cr>
