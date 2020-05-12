@@ -1,0 +1,39 @@
+# GIT Config
+alias config='/usr/bin/git --git-dir=/Users/kristher/.cfg/ --work-tree=/Users/kristher'
+
+# PHP
+alias artisan='php artisan'
+alias p='./vendor/bin/phpunit'
+alias pf='p --filter'
+alias phpunit='./vendor/bin/phpunit'
+
+#DIR
+alias codedir='$HOME/Code'
+alias webdir='$HOME/Code/PHP'
+alias railsdir='$HOME/Code/Rails'
+alias ngdir='$HOME/Code/Angular'
+alias npr='npm run'
+alias ta='$HOME/Code/Angular/treatanyone_app'
+alias ap='$HOME/Code/PHP/aunicajpay'
+alias wil='$HOME/Code/PHP/wilmaster'
+alias fm='codedir;flexmart'
+#GIT ALIASES
+alias gpf='git push origin -f'
+alias gp='git push origin'
+alias gp='git push origin'
+alias gfmm='git fetch origin master:master'
+alias grm='git rebase master'
+alias grmm='gfmm;grm'
+alias gc='git checkout'
+#SSH ALIASES
+alias sshpay='ssh forge@209.97.166.143'
+alias sshstage='ssh forge@test.aunicajpay.com'
+alias sshpaydb='forge@209.97.167.173'
+alias sshtest='ssh forge@206.189.37.184' 
+alias sshwil='ssh forge@178.128.57.225' 
+alias sshdrip='ssh forge@165.22.110.182'
+
+alias dc='docker-compose'
+
+#OTHERS
+alias pubcopy='cat ~/.ssh/id_rsa.pub| pbcopy'

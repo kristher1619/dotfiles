@@ -1,0 +1,931 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		172754BD107597F200D0347B /* Unit Tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 172754C7107597F400D0347B /* Build configuration list for PBXAggregateTarget "Unit Tests" */;
+			buildPhases = (
+				172754BC107597F200D0347B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Unit Tests";
+			productName = "Unit Tests";
+		};
+		4D1A51A110A4FF5D0046A98A /* Compile */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4D1A51AB10A4FF6A0046A98A /* Build configuration list for PBXAggregateTarget "Compile" */;
+			buildPhases = (
+				4D1A51A010A4FF5D0046A98A /* ShellScript */,
+			);
+			dependencies = (
+				75636700116E7ACA0030769A /* PBXTargetDependency */,
+			);
+			name = Compile;
+			productName = Compile;
+		};
+		4D1A51A510A4FF640046A98A /* Embed */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4D1A51AC10A4FF6A0046A98A /* Build configuration list for PBXAggregateTarget "Embed" */;
+			buildPhases = (
+				4D1A51A410A4FF640046A98A /* ShellScript */,
+			);
+			dependencies = (
+				75FE619611D907DF009D1E98 /* PBXTargetDependency */,
+			);
+			name = Embed;
+			productName = Embed;
+		};
+		753B921811AEF25B00DBCCC2 /* Choctop Release */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 753B921B11AEF28A00DBCCC2 /* Build configuration list for PBXAggregateTarget "Choctop Release" */;
+			buildPhases = (
+				753B921711AEF25B00DBCCC2 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Choctop Release";
+			productName = "Choctop Release";
+		};
+		757AEC6811AEBBE300381269 /* Choctop DMG */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 757AEC6B11AEBC0200381269 /* Build configuration list for PBXAggregateTarget "Choctop DMG" */;
+			buildPhases = (
+				757AEC6711AEBBE300381269 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Choctop DMG";
+			productName = "Choctop DMG";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA9DA510CDF852007972A1 /* MainMenu.xib */; };
+		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
+		5BC6E23312FB242B00B44881 /* SessionConfig.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6E23212FB242B00B44881 /* SessionConfig.rb */; };
+		5BE5780612F9693E0050D748 /* Constants.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BE5780512F9693E0050D748 /* Constants.rb */; };
+		5BE5781D12F969C80050D748 /* CreateFuzzyRecordOperation.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BE5781B12F969C80050D748 /* CreateFuzzyRecordOperation.rb */; };
+		5BE5781E12F969C80050D748 /* PathOperation.rb in Resources */ = {isa = PBXBuildFile; fileRef = 5BE5781C12F969C80050D748 /* PathOperation.rb */; };
+		750F49FE1173F6DF00015D47 /* dmg-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 750F49FD1173F6DF00015D47 /* dmg-background.png */; };
+		751C7E28119C8AEB00D86736 /* PeepOpenHelp.help in Resources */ = {isa = PBXBuildFile; fileRef = 751C7E1C119C8AEB00D86736 /* PeepOpenHelp.help */; };
+		756C28F911555825000E19D8 /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 756C28F811555825000E19D8 /* NSDate+Helper.m */; };
+		756C2A631155D97F000E19D8 /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 756C2A621155D97F000E19D8 /* AppDelegate.rb */; };
+		756C2CDE1156C4C3000E19D8 /* Array+GCD.rb in Resources */ = {isa = PBXBuildFile; fileRef = 756C2CDD1156C4C3000E19D8 /* Array+GCD.rb */; };
+		756C2DA41157E9BC000E19D8 /* BWToolkitFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 756C2DA31157E9BC000E19D8 /* BWToolkitFramework.framework */; };
+		756C2DAB1157EA08000E19D8 /* BWToolkitFramework.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 756C2DA31157E9BC000E19D8 /* BWToolkitFramework.framework */; };
+		75855C5B13B4261A006BA129 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75855C5A13B4261A006BA129 /* MacRuby.framework */; };
+		758B9B2411823FA900668505 /* statusItemIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 758B9B2311823FA900668505 /* statusItemIcon.png */; };
+		759101A81199DCE600F4E02E /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = 759101A71199DCE600F4E02E /* icon.icns */; };
+		759101CB1199DFCC00F4E02E /* AboutWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 759101C91199DFCC00F4E02E /* AboutWindow.xib */; };
+		759101CD1199DFE800F4E02E /* AboutWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 759101CC1199DFE800F4E02E /* AboutWindowController.rb */; };
+		7591020D1199E6D800F4E02E /* aboutBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7591020C1199E6D800F4E02E /* aboutBackground.png */; };
+		75955B9411F79EED00C0DA26 /* settings-16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 75955B9311F79EED00C0DA26 /* settings-16x16.png */; };
+		759B3C761200AB6B000B0BA8 /* statusItemIcon.dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 759B3C751200AB6B000B0BA8 /* statusItemIcon.dark.png */; };
+		75A446DE11B9C88C0031CF15 /* NSWindowControllerHelper.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75A446DD11B9C88C0031CF15 /* NSWindowControllerHelper.rb */; };
+		75B03F4A116F0B7D00053C2B /* PreferencesWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75B03F49116F0B7D00053C2B /* PreferencesWindowController.rb */; };
+		75B04007116FDFF800053C2B /* WelcomeWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75B04006116FDFF800053C2B /* WelcomeWindowController.rb */; };
+		75BAB436117EDA1800955D02 /* ReleaseNotesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75BAB434117EDA1800955D02 /* ReleaseNotesWindow.xib */; };
+		75BAB438117EDA3800955D02 /* ReleaseNotesWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75BAB437117EDA3800955D02 /* ReleaseNotesWindowController.rb */; };
+		75BEE8A6122EE2A600C94E41 /* SCEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BEE8A2122EE2A600C94E41 /* SCEvent.m */; };
+		75BEE8A7122EE2A600C94E41 /* SCEvents.m in Sources */ = {isa = PBXBuildFile; fileRef = 75BEE8A5122EE2A600C94E41 /* SCEvents.m */; };
+		75BEE8D2122EE4B900C94E41 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75BEE8D1122EE4B900C94E41 /* CoreServices.framework */; };
+		75BFEA9A116E9DA600D7D862 /* Support in Resources */ = {isa = PBXBuildFile; fileRef = 75BFEA8C116E9DA600D7D862 /* Support */; };
+		75C013E7118211C10037B468 /* WelcomeWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C013E5118211C10037B468 /* WelcomeWindow.xib */; };
+		75C014311182196B0037B468 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C0142F1182196B0037B468 /* PreferencesWindow.xib */; };
+		75C0144611821B030037B468 /* FuzzyWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C0144411821B030037B468 /* FuzzyWindow.xib */; };
+		75DB5A9A116E807600B1DD58 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75DB5A63116E804800B1DD58 /* Sparkle.framework */; };
+		75DB5AA0116E809100B1DD58 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 75DB5A63116E804800B1DD58 /* Sparkle.framework */; };
+		75E2E76B1150891E0056AD27 /* FuzzyCell.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75E2E76A1150891E0056AD27 /* FuzzyCell.rb */; };
+		75E2E76D1150898F0056AD27 /* FuzzyRecord.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75E2E76C1150898F0056AD27 /* FuzzyRecord.rb */; };
+		75E2E7E6115161F60056AD27 /* TFUtility.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75E2E7E5115161F60056AD27 /* TFUtility.rb */; };
+		75ECD3BB1150884A008C0BC3 /* FuzzyWindowController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75ECD3BA1150884A008C0BC3 /* FuzzyWindowController.rb */; };
+		75ECD3BD11508869008C0BC3 /* FuzzyTableViewController.rb in Resources */ = {isa = PBXBuildFile; fileRef = 75ECD3BC11508869008C0BC3 /* FuzzyTableViewController.rb */; };
+		75FBB6EF11B85B5200116CF5 /* editor-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FBB6EE11B85B5200116CF5 /* editor-32x32.png */; };
+		75FBB6F111B85BE300116CF5 /* advanced-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FBB6F011B85BE300116CF5 /* advanced-32x32.png */; };
+		75FBB6F311B85C6600116CF5 /* scm-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FBB6F211B85C6600116CF5 /* scm-32x32.png */; };
+		75FBB6F511B85CBB00116CF5 /* updates-32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 75FBB6F411B85CBB00116CF5 /* updates-32x32.png */; };
+		75FD918311B970DD00AA1786 /* TFProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FD918211B970DD00AA1786 /* TFProgressBar.m */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		756366FF116E7ACA0030769A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = FuzzyWindow;
+		};
+		75FE619511D907DF009D1E98 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1A51A110A4FF5D0046A98A;
+			remoteInfo = Compile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		172754B4107597CF00D0347B /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				75DB5AA0116E809100B1DD58 /* Sparkle.framework in Copy Frameworks */,
+				756C2DAB1157EA08000E19D8 /* BWToolkitFramework.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		172754D5107598EA00D0347B /* FuzzyRecord_test.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = FuzzyRecord_test.rb; sourceTree = "<group>"; };
+		17D55CD81076A1A2008207BD /* run_suite.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = run_suite.rb; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2BFA9DA610CDF852007972A1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4DE339F60D74FCDD00ADB6EE /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		5BC6E23212FB242B00B44881 /* SessionConfig.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = SessionConfig.rb; path = Classes/Helpers/SessionConfig.rb; sourceTree = "<group>"; };
+		5BE5780512F9693E0050D748 /* Constants.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = Constants.rb; path = Classes/Helpers/Constants.rb; sourceTree = "<group>"; };
+		5BE5781B12F969C80050D748 /* CreateFuzzyRecordOperation.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = CreateFuzzyRecordOperation.rb; path = Classes/Operations/CreateFuzzyRecordOperation.rb; sourceTree = "<group>"; };
+		5BE5781C12F969C80050D748 /* PathOperation.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = PathOperation.rb; path = Classes/Operations/PathOperation.rb; sourceTree = "<group>"; };
+		750F49FD1173F6DF00015D47 /* dmg-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dmg-background.png"; sourceTree = "<group>"; };
+		751C7E1C119C8AEB00D86736 /* PeepOpenHelp.help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PeepOpenHelp.help; sourceTree = "<group>"; };
+		756C28F711555825000E19D8 /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Helper.h"; path = "Classes/Helpers/NSDate+Helper.h"; sourceTree = "<group>"; };
+		756C28F811555825000E19D8 /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Helper.m"; path = "Classes/Helpers/NSDate+Helper.m"; sourceTree = "<group>"; };
+		756C2A621155D97F000E19D8 /* AppDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = AppDelegate.rb; path = Classes/Controllers/AppDelegate.rb; sourceTree = "<group>"; };
+		756C2CDD1156C4C3000E19D8 /* Array+GCD.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = "Array+GCD.rb"; path = "Classes/Helpers/Array+GCD.rb"; sourceTree = "<group>"; };
+		756C2DA31157E9BC000E19D8 /* BWToolkitFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BWToolkitFramework.framework; path = Vendor/BWToolkitFramework.framework; sourceTree = "<group>"; };
+		75855C5A13B4261A006BA129 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Vendor/MacRuby.framework; sourceTree = "<group>"; };
+		758B9B2311823FA900668505 /* statusItemIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = statusItemIcon.png; path = Artwork/statusItemIcon.png; sourceTree = "<group>"; };
+		759101A71199DCE600F4E02E /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = Artwork/icon.icns; sourceTree = "<group>"; };
+		759101CA1199DFCC00F4E02E /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/AboutWindow.xib; sourceTree = "<group>"; };
+		759101CC1199DFE800F4E02E /* AboutWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = AboutWindowController.rb; path = Classes/Controllers/AboutWindowController.rb; sourceTree = "<group>"; };
+		7591020C1199E6D800F4E02E /* aboutBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = aboutBackground.png; path = Artwork/aboutBackground.png; sourceTree = "<group>"; };
+		75955B9311F79EED00C0DA26 /* settings-16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "settings-16x16.png"; path = "Artwork/Icons/settings-16x16.png"; sourceTree = "<group>"; };
+		759B3C751200AB6B000B0BA8 /* statusItemIcon.dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = statusItemIcon.dark.png; path = Artwork/statusItemIcon.dark.png; sourceTree = "<group>"; };
+		75A446DD11B9C88C0031CF15 /* NSWindowControllerHelper.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = NSWindowControllerHelper.rb; path = Classes/Helpers/NSWindowControllerHelper.rb; sourceTree = "<group>"; };
+		75B03F49116F0B7D00053C2B /* PreferencesWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = PreferencesWindowController.rb; path = Classes/Controllers/PreferencesWindowController.rb; sourceTree = "<group>"; };
+		75B04006116FDFF800053C2B /* WelcomeWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = WelcomeWindowController.rb; path = Classes/Controllers/WelcomeWindowController.rb; sourceTree = "<group>"; };
+		75BAB435117EDA1800955D02 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/ReleaseNotesWindow.xib; sourceTree = "<group>"; };
+		75BAB437117EDA3800955D02 /* ReleaseNotesWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = ReleaseNotesWindowController.rb; path = Classes/Controllers/ReleaseNotesWindowController.rb; sourceTree = "<group>"; };
+		75BEE8A1122EE2A600C94E41 /* SCEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCEvent.h; path = Classes/Helpers/SCEvent/SCEvent.h; sourceTree = "<group>"; };
+		75BEE8A2122EE2A600C94E41 /* SCEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCEvent.m; path = Classes/Helpers/SCEvent/SCEvent.m; sourceTree = "<group>"; };
+		75BEE8A3122EE2A600C94E41 /* SCEventListenerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCEventListenerProtocol.h; path = Classes/Helpers/SCEvent/SCEventListenerProtocol.h; sourceTree = "<group>"; };
+		75BEE8A4122EE2A600C94E41 /* SCEvents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCEvents.h; path = Classes/Helpers/SCEvent/SCEvents.h; sourceTree = "<group>"; };
+		75BEE8A5122EE2A600C94E41 /* SCEvents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCEvents.m; path = Classes/Helpers/SCEvent/SCEvents.m; sourceTree = "<group>"; };
+		75BEE8D1122EE4B900C94E41 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		75BFEA8C116E9DA600D7D862 /* Support */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Support; sourceTree = "<group>"; };
+		75C013E6118211C10037B468 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/WelcomeWindow.xib; sourceTree = "<group>"; };
+		75C014301182196B0037B468 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		75C0144511821B030037B468 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/FuzzyWindow.xib; sourceTree = "<group>"; };
+		75DB5A63116E804800B1DD58 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sparkle.framework; path = Vendor/Sparkle.framework; sourceTree = "<group>"; };
+		75E2E76A1150891E0056AD27 /* FuzzyCell.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = FuzzyCell.rb; path = Classes/Views/FuzzyCell.rb; sourceTree = "<group>"; };
+		75E2E76C1150898F0056AD27 /* FuzzyRecord.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = FuzzyRecord.rb; path = Classes/Models/FuzzyRecord.rb; sourceTree = "<group>"; };
+		75E2E7E5115161F60056AD27 /* TFUtility.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = TFUtility.rb; path = Classes/TFUtility.rb; sourceTree = "<group>"; };
+		75ECD3BA1150884A008C0BC3 /* FuzzyWindowController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = FuzzyWindowController.rb; path = Classes/Controllers/FuzzyWindowController.rb; sourceTree = "<group>"; };
+		75ECD3BC11508869008C0BC3 /* FuzzyTableViewController.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = FuzzyTableViewController.rb; path = Classes/Controllers/FuzzyTableViewController.rb; sourceTree = "<group>"; };
+		75FBB6EE11B85B5200116CF5 /* editor-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "editor-32x32.png"; path = "Artwork/Icons/editor-32x32.png"; sourceTree = "<group>"; };
+		75FBB6F011B85BE300116CF5 /* advanced-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "advanced-32x32.png"; path = "Artwork/Icons/advanced-32x32.png"; sourceTree = "<group>"; };
+		75FBB6F211B85C6600116CF5 /* scm-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "scm-32x32.png"; path = "Artwork/Icons/scm-32x32.png"; sourceTree = "<group>"; };
+		75FBB6F411B85CBB00116CF5 /* updates-32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "updates-32x32.png"; path = "Artwork/Icons/updates-32x32.png"; sourceTree = "<group>"; };
+		75FD918111B970DD00AA1786 /* TFProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TFProgressBar.h; path = Classes/Views/TFProgressBar.h; sourceTree = "<group>"; };
+		75FD918211B970DD00AA1786 /* TFProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TFProgressBar.m; path = Classes/Views/TFProgressBar.m; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* PeepOpen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeepOpen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				756C2DA41157E9BC000E19D8 /* BWToolkitFramework.framework in Frameworks */,
+				75DB5A9A116E807600B1DD58 /* Sparkle.framework in Frameworks */,
+				75BEE8D2122EE4B900C94E41 /* CoreServices.framework in Frameworks */,
+				75855C5B13B4261A006BA129 /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5BE5780C12F969720050D748 /* Operations */,
+				756C28F2115557FD000E19D8 /* Helpers */,
+				75E2E769115088FB0056AD27 /* Views */,
+				75E2E768115088F50056AD27 /* Models */,
+				75E2E767115088EC0056AD27 /* Controllers */,
+				75E2E7E5115161F60056AD27 /* TFUtility.rb */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75855C5A13B4261A006BA129 /* MacRuby.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				756C2DA31157E9BC000E19D8 /* BWToolkitFramework.framework */,
+				75DB5A63116E804800B1DD58 /* Sparkle.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				75BEE8D1122EE4B900C94E41 /* CoreServices.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		172754AE1075979200D0347B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				172754D5107598EA00D0347B /* FuzzyRecord_test.rb */,
+				17D55CD81076A1A2008207BD /* run_suite.rb */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* PeepOpen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* FuzzyWindow */ = {
+			isa = PBXGroup;
+			children = (
+				172754AE1075979200D0347B /* Tests */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = FuzzyWindow;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4DE339F60D74FCDD00ADB6EE /* rb_main.rb */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				75FBB6ED11B85B3F00116CF5 /* Icons */,
+				751C7E1C119C8AEB00D86736 /* PeepOpenHelp.help */,
+				7591020C1199E6D800F4E02E /* aboutBackground.png */,
+				759101A71199DCE600F4E02E /* icon.icns */,
+				759B3C751200AB6B000B0BA8 /* statusItemIcon.dark.png */,
+				758B9B2311823FA900668505 /* statusItemIcon.png */,
+				750F49FD1173F6DF00015D47 /* dmg-background.png */,
+				75BFEA8C116E9DA600D7D862 /* Support */,
+				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				75BAB434117EDA1800955D02 /* ReleaseNotesWindow.xib */,
+				75C013E5118211C10037B468 /* WelcomeWindow.xib */,
+				75C0142F1182196B0037B468 /* PreferencesWindow.xib */,
+				75C0144411821B030037B468 /* FuzzyWindow.xib */,
+				759101C91199DFCC00F4E02E /* AboutWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BE5780C12F969720050D748 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				5BE5781B12F969C80050D748 /* CreateFuzzyRecordOperation.rb */,
+				5BE5781C12F969C80050D748 /* PathOperation.rb */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		756C28F2115557FD000E19D8 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				5BC6E23212FB242B00B44881 /* SessionConfig.rb */,
+				5BE5780512F9693E0050D748 /* Constants.rb */,
+				75BEE8A0122EE29300C94E41 /* SCEvent */,
+				75A446DD11B9C88C0031CF15 /* NSWindowControllerHelper.rb */,
+				756C2CDD1156C4C3000E19D8 /* Array+GCD.rb */,
+				756C28F711555825000E19D8 /* NSDate+Helper.h */,
+				756C28F811555825000E19D8 /* NSDate+Helper.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		75BEE8A0122EE29300C94E41 /* SCEvent */ = {
+			isa = PBXGroup;
+			children = (
+				75BEE8A1122EE2A600C94E41 /* SCEvent.h */,
+				75BEE8A2122EE2A600C94E41 /* SCEvent.m */,
+				75BEE8A3122EE2A600C94E41 /* SCEventListenerProtocol.h */,
+				75BEE8A4122EE2A600C94E41 /* SCEvents.h */,
+				75BEE8A5122EE2A600C94E41 /* SCEvents.m */,
+			);
+			name = SCEvent;
+			sourceTree = "<group>";
+		};
+		75E2E767115088EC0056AD27 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				756C2A621155D97F000E19D8 /* AppDelegate.rb */,
+				75ECD3BA1150884A008C0BC3 /* FuzzyWindowController.rb */,
+				75ECD3BC11508869008C0BC3 /* FuzzyTableViewController.rb */,
+				75B03F49116F0B7D00053C2B /* PreferencesWindowController.rb */,
+				75B04006116FDFF800053C2B /* WelcomeWindowController.rb */,
+				75BAB437117EDA3800955D02 /* ReleaseNotesWindowController.rb */,
+				759101CC1199DFE800F4E02E /* AboutWindowController.rb */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		75E2E768115088F50056AD27 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75E2E76C1150898F0056AD27 /* FuzzyRecord.rb */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		75E2E769115088FB0056AD27 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75FD918111B970DD00AA1786 /* TFProgressBar.h */,
+				75FD918211B970DD00AA1786 /* TFProgressBar.m */,
+				75E2E76A1150891E0056AD27 /* FuzzyCell.rb */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		75FBB6ED11B85B3F00116CF5 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				75955B9311F79EED00C0DA26 /* settings-16x16.png */,
+				75FBB6F411B85CBB00116CF5 /* updates-32x32.png */,
+				75FBB6F211B85C6600116CF5 /* scm-32x32.png */,
+				75FBB6F011B85BE300116CF5 /* advanced-32x32.png */,
+				75FBB6EE11B85B5200116CF5 /* editor-32x32.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* PeepOpen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PeepOpen" */;
+			buildPhases = (
+				75BAB3F5117E7C4400955D02 /* ShellScript */,
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+				172754B4107597CF00D0347B /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeepOpen;
+			productInstallPath = "$(HOME)/Applications";
+			productName = FuzzyWindow;
+			productReference = 8D1107320486CEB800E47090 /* PeepOpen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PeepOpen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* FuzzyWindow */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* PeepOpen */,
+				172754BD107597F200D0347B /* Unit Tests */,
+				4D1A51A110A4FF5D0046A98A /* Compile */,
+				4D1A51A510A4FF640046A98A /* Embed */,
+				757AEC6811AEBBE300381269 /* Choctop DMG */,
+				753B921811AEF25B00DBCCC2 /* Choctop Release */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
+				2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */,
+				75ECD3BB1150884A008C0BC3 /* FuzzyWindowController.rb in Resources */,
+				75ECD3BD11508869008C0BC3 /* FuzzyTableViewController.rb in Resources */,
+				75E2E76B1150891E0056AD27 /* FuzzyCell.rb in Resources */,
+				75E2E76D1150898F0056AD27 /* FuzzyRecord.rb in Resources */,
+				75E2E7E6115161F60056AD27 /* TFUtility.rb in Resources */,
+				756C2A631155D97F000E19D8 /* AppDelegate.rb in Resources */,
+				756C2CDE1156C4C3000E19D8 /* Array+GCD.rb in Resources */,
+				75BFEA9A116E9DA600D7D862 /* Support in Resources */,
+				75B03F4A116F0B7D00053C2B /* PreferencesWindowController.rb in Resources */,
+				75B04007116FDFF800053C2B /* WelcomeWindowController.rb in Resources */,
+				750F49FE1173F6DF00015D47 /* dmg-background.png in Resources */,
+				75BAB436117EDA1800955D02 /* ReleaseNotesWindow.xib in Resources */,
+				75BAB438117EDA3800955D02 /* ReleaseNotesWindowController.rb in Resources */,
+				75C013E7118211C10037B468 /* WelcomeWindow.xib in Resources */,
+				75C014311182196B0037B468 /* PreferencesWindow.xib in Resources */,
+				75C0144611821B030037B468 /* FuzzyWindow.xib in Resources */,
+				758B9B2411823FA900668505 /* statusItemIcon.png in Resources */,
+				759101A81199DCE600F4E02E /* icon.icns in Resources */,
+				759101CB1199DFCC00F4E02E /* AboutWindow.xib in Resources */,
+				759101CD1199DFE800F4E02E /* AboutWindowController.rb in Resources */,
+				7591020D1199E6D800F4E02E /* aboutBackground.png in Resources */,
+				751C7E28119C8AEB00D86736 /* PeepOpenHelp.help in Resources */,
+				75FBB6EF11B85B5200116CF5 /* editor-32x32.png in Resources */,
+				75FBB6F111B85BE300116CF5 /* advanced-32x32.png in Resources */,
+				75FBB6F311B85C6600116CF5 /* scm-32x32.png in Resources */,
+				75FBB6F511B85CBB00116CF5 /* updates-32x32.png in Resources */,
+				75A446DE11B9C88C0031CF15 /* NSWindowControllerHelper.rb in Resources */,
+				75955B9411F79EED00C0DA26 /* settings-16x16.png in Resources */,
+				759B3C761200AB6B000B0BA8 /* statusItemIcon.dark.png in Resources */,
+				5BE5780612F9693E0050D748 /* Constants.rb in Resources */,
+				5BE5781D12F969C80050D748 /* CreateFuzzyRecordOperation.rb in Resources */,
+				5BE5781E12F969C80050D748 /* PathOperation.rb in Resources */,
+				5BC6E23312FB242B00B44881 /* SessionConfig.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		172754BC107597F200D0347B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/macruby Tests/run_suite.rb";
+		};
+		4D1A51A010A4FF5D0046A98A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The macruby_deploy command-line tool with the --compile argument will compile every Ruby source file of your .app into machine code. Default options will be used. Pass the -h option to get more information.\nPATH=\"$PATH:/usr/local/bin\" macruby_deploy --compile \"$TARGET_BUILD_DIR/$PROJECT_NAME.app\"";
+		};
+		4D1A51A410A4FF640046A98A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The macruby_deploy command-line tool with the --embed argument will make sure the MacRuby framework will be embedded in your .app. Default options will be used. Pass the -h option to get more information.\nPATH=\"$PATH:/usr/local/bin\" macruby_deploy --embed --no-stdlib \"$TARGET_BUILD_DIR/$PROJECT_NAME.app\"";
+		};
+		753B921711AEF25B00DBCCC2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\nrake release";
+		};
+		757AEC6711AEBBE300381269 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here\nrake dmg";
+		};
+		75BAB3F5117E7C4400955D02 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ ${CONFIGURATION} == \"Release\" ]]\nthen\n\tHELP_FOLDER=\"$SRCROOT/PeepOpenHelp.help/Contents/Resources/English.lproj\"\n\tHELP_DOC=\"English.lproj/PeepOpenHelp.vpdoc\"\n\t# Clean folder, so we don't have extra junk in there\n\trm -rf \"$HELP_FOLDER\"\n\techo \"Generating documentation...\"\n\topen \"$SRCROOT/$HELP_DOC\"\n\tosascript -e \"tell application \\\"VoodooPad\\\"\" \\\n\t\t-e \"web export the document of the front window to \\\"$HELP_FOLDER\\\" using conversion format \\\"RTFD to HTML\\\" with properties {fileExtension:\\\"html\\\"}\" \\\n\t\t-e \"quit\" \\\n\t\t-e \"end tell\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				756C28F911555825000E19D8 /* NSDate+Helper.m in Sources */,
+				75FD918311B970DD00AA1786 /* TFProgressBar.m in Sources */,
+				75BEE8A6122EE2A600C94E41 /* SCEvent.m in Sources */,
+				75BEE8A7122EE2A600C94E41 /* SCEvents.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75636700116E7ACA0030769A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* PeepOpen */;
+			targetProxy = 756366FF116E7ACA0030769A /* PBXContainerItemProxy */;
+		};
+		75FE619611D907DF009D1E98 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1A51A110A4FF5D0046A98A /* Compile */;
+			targetProxy = 75FE619511D907DF009D1E98 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2BFA9DA510CDF852007972A1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2BFA9DA610CDF852007972A1 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		759101C91199DFCC00F4E02E /* AboutWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				759101CA1199DFCC00F4E02E /* English */,
+			);
+			name = AboutWindow.xib;
+			sourceTree = "<group>";
+		};
+		75BAB434117EDA1800955D02 /* ReleaseNotesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75BAB435117EDA1800955D02 /* English */,
+			);
+			name = ReleaseNotesWindow.xib;
+			sourceTree = "<group>";
+		};
+		75C013E5118211C10037B468 /* WelcomeWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C013E6118211C10037B468 /* English */,
+			);
+			name = WelcomeWindow.xib;
+			sourceTree = "<group>";
+		};
+		75C0142F1182196B0037B468 /* PreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C014301182196B0037B468 /* English */,
+			);
+			name = PreferencesWindow.xib;
+			sourceTree = "<group>";
+		};
+		75C0144411821B030037B468 /* FuzzyWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75C0144511821B030037B468 /* English */,
+			);
+			name = FuzzyWindow.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		172754BE107597F200D0347B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Unit Tests";
+			};
+			name = Debug;
+		};
+		172754BF107597F200D0347B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Unit Tests";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4D1A51A210A4FF5D0046A98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = Compile;
+			};
+			name = Debug;
+		};
+		4D1A51A310A4FF5D0046A98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = Compile;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4D1A51A610A4FF640046A98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = Embed;
+			};
+			name = Debug;
+		};
+		4D1A51A710A4FF640046A98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = Embed;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		753B921911AEF25B00DBCCC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = "Choctop Release";
+			};
+			name = Debug;
+		};
+		753B921A11AEF25B00DBCCC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = "Choctop Release";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		757AEC6911AEBBE400381269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = "Choctop DMG";
+			};
+			name = Debug;
+		};
+		757AEC6A11AEBBE400381269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = "Choctop DMG";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)/Vendor\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = PeepOpen;
+				WRAPPER_EXTENSION = app;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)/Vendor\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PEEPOPEN_BUNDLE_VERSION = "${PEEPOPEN_BUNDLE_VERSION}";
+				PRODUCT_NAME = PeepOpen;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PEEPOPEN_BUNDLE_VERSION = 0.3.6;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PEEPOPEN_BUNDLE_VERSION = 0.3.6;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		172754C7107597F400D0347B /* Build configuration list for PBXAggregateTarget "Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172754BE107597F200D0347B /* Debug */,
+				172754BF107597F200D0347B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1A51AB10A4FF6A0046A98A /* Build configuration list for PBXAggregateTarget "Compile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1A51A210A4FF5D0046A98A /* Debug */,
+				4D1A51A310A4FF5D0046A98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1A51AC10A4FF6A0046A98A /* Build configuration list for PBXAggregateTarget "Embed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1A51A610A4FF640046A98A /* Debug */,
+				4D1A51A710A4FF640046A98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753B921B11AEF28A00DBCCC2 /* Build configuration list for PBXAggregateTarget "Choctop Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753B921911AEF25B00DBCCC2 /* Debug */,
+				753B921A11AEF25B00DBCCC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		757AEC6B11AEBC0200381269 /* Build configuration list for PBXAggregateTarget "Choctop DMG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				757AEC6911AEBBE400381269 /* Debug */,
+				757AEC6A11AEBBE400381269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "PeepOpen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "PeepOpen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
