@@ -1,6 +1,11 @@
 {
-  "coc.preferences.formatOnSaveFiletypes": ["javascript", "typescript", "json" ],
-  "eslint.filetypes": ["javascript", "typescript", "typescriptangular", "javascriptangular" ],
-	"suggest.noselect": false,
-	"eslint.autoFixOnSave": true
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "json",
+    "scss"
+  ],
+  "eslint.filetypes": ["javascript", "typescript"],
+  "suggest.noselect": false,
+  "eslint.autoFixOnSave": true
 }

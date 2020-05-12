@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/kristher/Code/Angular/treatanyone_app'
+let g:netrw_dirhist_1='/Users/kristher/.config'
+let g:netrw_dirhist_0='/Users/kristher/.config/nvim'
+let g:netrw_dirhist_9='/Users/kristher/.config/nvim/plugins'
+let g:netrw_dirhist_8='/Users/kristher/.config/nvim'
+let g:netrw_dirhist_7='/Users/kristher/Code/Angular/treatanyone_app'
+let g:netrw_dirhist_6='/Users/kristher/Code/Angular'
+let g:netrw_dirhist_5='/Users/kristher/Code/Angular/ocm-angular-playground'
+let g:netrw_dirhist_4='/Users/kristher/Code/Angular/ocm-angular-playground/.git'
+let g:netrw_dirhist_3='/Users/kristher/.config/nvim/plugins'
