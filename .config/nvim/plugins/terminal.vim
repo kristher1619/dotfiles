@@ -5,6 +5,7 @@
 
 
 set shell=/usr/local/bin/zsh
+tnoremap <silent> <C-[><C-[> <C-\><C-n>
 tnoremap <Esc> <C-\><C-n>
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif

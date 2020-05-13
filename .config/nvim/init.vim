@@ -1,21 +1,15 @@
 
 call plug#begin('~/.vim/plugged')
-Plug 'dracula/vim'
 Plug 'kaicataldo/material.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-vinegar'
-Plug 'scrooloose/nerdtree'
 Plug 'ryanoasis/vim-devicons'
-"Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'leafgarland/typescript-vim'
-Plug 'tpope/vim-surround'
-Plug 'Shougo/denite.nvim'
 Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
-
+Plug 'leafgarland/typescript-vim'
 
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
@@ -23,6 +17,7 @@ Plug 'tpope/vim-rhubarb'
 Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 " UI Customizations
@@ -34,7 +29,6 @@ so ~/.config/nvim/plugins/material.vim
 so ~/.config/nvim/plugins/nerdtree.vim
 so ~/.config/nvim/plugins/coc.vim
 so ~/.config/nvim/plugins/terminal.vim
-"so ~/.config/nvim/plugins/ctrlp.vim
 so ~/.config/nvim/plugins/which-key.vim
 so ~/.config/nvim/plugins/fzf.vim
 
@@ -42,11 +36,11 @@ so ~/.config/nvim/plugins/fzf.vim
 set number
 set shiftwidth=2
 set tabstop=2
+set expandtab
 set autoindent
 set smartindent
 set clipboard+=unnamedplus
 set wrap!
-set autochdir
 "--------------Search-------------"
 set hlsearch            "set search highlight
 set incsearch
@@ -56,25 +50,36 @@ set splitbelow            				"New window will be added below
 set splitright
 
 
-au! BufWritePost $MYVIMRC source %
+au! BufWritePost $MYVIMRC source % "Auto load vimrc after changed
 
+au FocusLost * :wa "Auto save when focus is lost
 
 "--------------------- Key Map -------------------------
 map <Leader>ev :tabedit ~/.config/nvim/init.vim<cr>
 nnoremap <Leader><space> :nohlsearch<CR>
 map <Leader>w :w<CR>
 map <Leader>ss :w<CR>
-map <Leader>so :w<CR>:so ~/.config/nvim/init.vim<CR>
-nmap bq :q<cr>
-nmap <Leader>qq :q<cr>
+map <Leader>so :w<CR>:so ~/.config/nvim/init.vim<CR> 
+nmap <Leader>qq :quit<cr>
+imap <C-w> <ESC>:q<cr>
+map <C-w> :q<cr>
+" Save File
+imap <C-s> <ESC>:w<cr>
+map <C-s> :w<cr>
+
 imap jj <ESC>
 imap kk <ESC>:w<CR>
 
-inoremap <c-u> <ESC>viwUi
 nnoremap <Leader>U viwU<esc>
 nnoremap <Leader>u viwu<Esc>
 
-" ----------- Projects Directory 
+
+"-------------- Comments ----------------
+nnoremap c/ :Commentary<CR>j
+vnoremap c/ :Commentary<CR>
+
+
+" ----------- Projects Directory  ------------------
 map <Leader>ta :tabe ~/Code/Angular/treatanyone_app<CR>
 map <Leader>ap :tabe ~/Code/PHP/aunicajpay<CR>
 map <Leader>wil :tabe ~/Code/PHP/wilmaster<CR>
@@ -85,6 +90,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" ---------- Tabs ------------
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
