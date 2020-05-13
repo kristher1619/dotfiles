@@ -6,5 +6,5 @@ let g:NERDTreeIgnore = []
 let g:NERDTreeStatusline = ''
 let g:NERDTreeHijackNetrw = 0
 nnoremap  <C-b> :NERDTreeToggle<CR>
-nnoremap <Leader>1 :NERDTreeToggle<CR>
+nnoremap <Leader>n1 :NERDTreeToggle<CR>
 

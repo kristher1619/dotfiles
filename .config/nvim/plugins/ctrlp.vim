@@ -15,6 +15,4 @@ endif
 
 
 nmap <C-p> :CtrlP<cr>
-nmap <C-R> :CtrlPBufTag<cr>
-nmap <C-e> :CtrlPMRUFiles<cr>
 

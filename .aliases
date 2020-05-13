@@ -19,12 +19,13 @@ alias wil='$HOME/Code/PHP/wilmaster'
 alias fm='codedir;flexmart'
 #GIT ALIASES
 alias gpf='git push origin -f'
-alias gp='git push origin'
-alias gp='git push origin'
+alias gp='git push -u origin'
 alias gfmm='git fetch origin master:master'
 alias grm='git rebase master'
 alias grmm='gfmm;grm'
+alias grc='grc'
 alias gc='git checkout'
+
 #SSH ALIASES
 alias sshpay='ssh forge@209.97.166.143'
 alias sshstage='ssh forge@test.aunicajpay.com'
