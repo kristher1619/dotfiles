@@ -9,7 +9,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
 Plug 'leafgarland/typescript-vim'
-
+Plug 'skwp/greplace.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-rhubarb'
@@ -19,6 +19,9 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
+set grepprg=rg
+
+let g:grep_cmd_opts = '--line-number --no-heading'
 " UI Customizations
 syntax enable
 let mapleader = ','
@@ -30,6 +33,13 @@ so ~/.config/nvim/plugins/coc.vim
 so ~/.config/nvim/plugins/terminal.vim
 so ~/.config/nvim/plugins/which-key.vim
 so ~/.config/nvim/plugins/fzf.vim
+
+
+
+"---------- Language Specific ------------
+so ~/.config/nvim/language/laravel.vim
+
+
 
 "----------------- Formatting ------------------
 set number
@@ -56,6 +66,7 @@ au FocusLost * :wa "Auto save when focus is lost
 
 "--------------------- Key Map -------------------------
 map <Leader>ev :tabedit $MYVIMRC<cr>
+map <Leader>ep :tabedit ~/.config/nvim/plugins/<cr>
 nnoremap <Leader><space> :nohlsearch<CR>
 map <Leader>w :w<CR>
 map <Leader>ss :w<CR>
@@ -73,6 +84,7 @@ imap kk <ESC>:w<CR>
 nnoremap <Leader>U viwU<esc>
 nnoremap <Leader>u viwu<Esc>
 
+map <Leader>R :Gsearch<cr>
 
 "-------------- Comments ----------------
 nnoremap <space>-/> :Commentary<CR>j

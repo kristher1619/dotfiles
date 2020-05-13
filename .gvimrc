@@ -1,7 +1,7 @@
 "Disable Print
 if has("gui_macvim")
   macmenu &File.Print key=<nop>
-  macmenu &File.Open key=<nop>
+  macmenu &File.Open\.\.\. key=<nop>
   macmenu &Edit.Find.Find\.\.\. key=<nop>
 endif
 
@@ -26,7 +26,7 @@ noremap <D-4> 4gt
 noremap <D-5> 5gt
 noremap <C-Tab> gt
 
-map <D-p> :GFiles<CR>
+map <D-p> :Files<CR>
 map <D-F> :Rg<CR>
 map <D-d> :vsp<CR>
 
@@ -38,6 +38,4 @@ map <D-[> <C-h>
 "-------------- Comments ----------------
 nnoremap <D-/> :Commentary<CR>j
 vnoremap <D-/> :Commentary<CR>
-
-remap <D-B> gd<cr>
 
