@@ -28,6 +28,7 @@ noremap <C-Tab> gt
 
 map <D-p> :GFiles<CR>
 map <D-F> :Rg<CR>
+map <D-d> :vsp<CR>
 
 
 "-------- Splits ---------
