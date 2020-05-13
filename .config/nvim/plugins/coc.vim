@@ -1,5 +1,5 @@
 "-----------------COC--------------------------
-let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tsserver', 'coc-vetur']
+let g:coc_global_extensions = ['coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-phpls','coc-tsserver', 'coc-vetur']
 
 " TextEdit might fail if hidden is not set.
 set hidden
@@ -144,5 +144,3 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
-
-nnoremap <leader>es :CocCommand eslint.executeAutofix<CR>

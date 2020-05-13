@@ -27,6 +27,7 @@ noremap <D-5> 5gt
 noremap <C-Tab> gt
 
 map <D-p> :Files<CR>
+imap <D-p> <ESC>:Files<CR>
 map <D-F> :Rg<CR>
 map <D-d> :vsp<CR>
 

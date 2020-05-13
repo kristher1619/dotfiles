@@ -1,9 +1,9 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
     "javascript",
-    "typescript",
     "json",
-    "scss"
+    "scss",
+    "php"
   ],
   "eslint.filetypes": ["javascript", "typescript"],
   "suggest.noselect": false,
