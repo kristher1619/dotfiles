@@ -44,10 +44,9 @@ call plug#end()
 " let g:sytastic_typescript_checkers = ['typescript', 'coc']
 
 " --------GReplace-----------
-set grepprg=rg
+set grepprg=ag
 
-let g:grep_cmd_opts = '--line-number --no-heading'
-
+let g:grep_cmd_opts = '--line-numbers --no-heading'
 "----------- PHP Docs -----------
 
 let g:pdv_template_dir = $HOME ."/.vim/plugged/pdv/templates"
@@ -121,6 +120,7 @@ map <C-w> :q<cr>
 imap <C-s> <ESC>:w<cr>
 map <C-s> :w<cr>
 
+map <leader>aa :e ~/.aliases<cr>
 imap jj <ESC>
 imap kk <ESC>:w<CR>
 
@@ -128,11 +128,11 @@ nnoremap <Leader>U viwU<esc>
 nnoremap <Leader>u viwu<Esc>
 
 map <Leader>R :Gsearch<cr>
-map <C-S-r> :Gsearch<cr>
 
 "-------------- Comments ----------------
 " nnoremap <space>/ :Commentary<CR>j
 nnoremap <c-_> :Commentary<CR>j
+nnoremap <c-/> :Commentary<CR>j
 vnoremap <C-_> :Commentary<CR>
 
 nnoremap <D-/> :Commentary<CR>j
@@ -150,10 +150,13 @@ nnoremap <C-l> <C-w>l
 
 " ---------- Tabs ------------
 noremap <leader>1 1gt
+noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
 noremap <leader>4 4gt
 noremap <leader>5 5gt
+noremap <leader><tab> gt
+noremap <leader><s-tab> gT
 nmap <C-t> :tabnew<cr>						"Open new tab
 
 "----------- FZF -----------
