@@ -5,18 +5,9 @@ let g:fzf_action = {
   \ 'ctrl-v': 'vsplit' }
 
 " Enable per-command history.
-" CTRL-N and CTRL-P will be automatically bound to next-history and
-" previous-history instead of down and up. If you don't like the change,
-" explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
+" CTRL-N and CTRL-P will be automatically bound to next-history and " previous-history instead of down and up. If you don't like the change, " explicitly bind the keys to down and up in your $FZF_DEFAULT_OPTS.
 let g:fzf_history_dir = '~/.local/share/fzf-history'
 
-map <C-p> :Files<CR>
-map <C-g> :GFiles<CR>
-map <leader>b :Buffers<CR>
-nnoremap <leader>f :Rg<CR>
-nnoremap <C-f> :Rg<CR>
-nnoremap <leader>t :Tags<CR>
-nnoremap <leader>m :Marks<CR>
 
 let g:fzf_tags_command = 'ctags -R'
 " Border color

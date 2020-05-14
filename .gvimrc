@@ -3,10 +3,10 @@ if has("gui_macvim")
   macmenu &File.Print key=<nop>
   macmenu &File.Open\.\.\. key=<nop>
   macmenu &Edit.Find.Find\.\.\. key=<nop>
+  macmenu &Tools.Make key=<nop>
 endif
 
 "--------------GUIOptions-------------"
-colorscheme material
 set macligatures					"Fancy Symbols
 set guifont=Fira_Code:h15
 set guioptions-=l					"Disable GUI Scrollbars

@@ -1,12 +1,16 @@
 
 "--------------Terminal-----------------------
 
-" turn terminal to normal mode with escape
 
+" Turn terminal to normal mode with escape
+" Also close the FZF windows when pressing <esc> key
 
+if has("nvim")
+  au TermOpen * tnoremap <buffer> <Esc> <c-\><c-n>
+  au FileType fzf tunmap <buffer> <Esc>
+endif
 set shell=/usr/local/bin/zsh
-tnoremap <silent> <C-[><C-[> <C-\><C-n>
-tnoremap <Esc> <C-\><C-n>
+
 " start terminal in insert mode
 au BufEnter * if &buftype == 'terminal' | :startinsert | endif
 " open terminal on ctrl+n
