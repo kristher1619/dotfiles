@@ -25,6 +25,7 @@ alias grm='git rebase master'
 alias grmm='gfmm;grm'
 alias grc='grc'
 alias gc='git checkout'
+alias gaa='git add -u'
 
 #SSH ALIASES
 alias sshpay='ssh forge@209.97.166.143'
