@@ -81,6 +81,7 @@ nnoremap <leader>ef :Format<CR>
 
 "----------------- Formatting ------------------
 set number
+set relativenumber
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
@@ -106,7 +107,7 @@ au! BufWritePost $MYVIMRC source % "Auto load vimrc after changed
 au FocusLost * :wa "Auto save when focus is lost
 
 "--------------------- Key Map -------------------------
-map <Leader>ev :tabedit $MYVIMRC<cr>
+map <Leader>ev :vsplit $MYVIMRC<cr>
 map <Leader>ep :tabedit ~/.config/nvim/plugins/<cr>
 nnoremap <Leader><space> :nohlsearch<CR>
 map <Leader>w :w<CR>
@@ -115,8 +116,8 @@ map <Leader>ss :w<CR>
 map <Leader>so :w<CR>:so $MYVIMRC<CR> 
 nmap <Leader>qq :q!<cr>
 nmap <Leader>qa :qa!<cr>
-imap <C-w> <ESC>:q<cr>
-map <C-w> :q<cr>
+" imap <C-w> <ESC>:q<cr>
+" map <C-w> :q<cr>
 " Save File
 imap <C-s> <ESC>:w<cr>
 map <C-s> :w<cr>
@@ -141,7 +142,7 @@ vnoremap <D-/> :Commentary<CR>j
 
 " ----------- Projects Directory  ------------------
 map <Leader>ta :e ~/Code/Angular/treatanyone_app<CR><CR>
-map <Leader>fm :e ~/Code/flexmart<CR><CR>
+map <Leader>fm :e ~/Code/flexmart<CR>
 
 "----------- Splits ---------------
 nnoremap <C-h> <C-w>h
@@ -158,7 +159,6 @@ noremap <leader>4 4gt
 noremap <leader>5 5gt
 noremap <leader><tab> gt
 noremap <leader><s-tab> gT
-nmap <C-t> :tabnew<cr>						"Open new tab
 
 "----------- FZF -----------
 
@@ -171,5 +171,6 @@ nnoremap <C-b> :call CocAction('jumpDefinition', 'drop')<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
+nnoremap <leader>M <C-w>_<C-w>|
 nnoremap <D-b> :call CocAction('jumpDefinition', 'drop')<CR>
 

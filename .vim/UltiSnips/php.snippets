@@ -1,7 +1,53 @@
 snippet pum
-
 	public function $1() {
 		$2
 	}
+endsnippet
+
+
+snippet prm 
+	public function $1() {
+		$2
+	}
+endsnippet
+snippet test 
+
+	/**
+	* @test
+	*/
+	public function it_$1() {
+		$2
+	}
+endsnippet
+
+snippet cls "Create new Class Template" 
+<?php
+
+namespace $1;
+
+
+class $2
+{
+		$3
+}
+endsnippet
+
+
+snippet rg "Router Get Method"
+
+Route::get('$1','$2');
+
+endsnippet
+
+
+snippet rp "Router Post Method"
+
+Route::post('$1','$2');
+
+endsnippet
+
+snippet rd "Router Delete Method"
+
+Route::delete('$1','$2');
 
 endsnippet
