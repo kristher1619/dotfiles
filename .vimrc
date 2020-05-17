@@ -102,6 +102,19 @@ set splitbelow            				"New window will be added below
 set splitright
 
 
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+
+
+
+nnoremap <Leader>s= <C-w>=
+nnoremap <Leader>s+ <C-w>+
+nnoremap <Leader>s- <C-w>-
+nnoremap <Leader>sm  <C-w>\|<C-w>_
+nnoremap <C-m>m  <C-w>\|<C-w>_
+
 au! BufWritePost $MYVIMRC source % "Auto load vimrc after changed
 
 au FocusLost * :wa "Auto save when focus is lost
@@ -114,13 +127,9 @@ map <Leader>w :w<CR>
 map <Leader>wa :wa<CR>
 map <Leader>ss :w<CR>
 map <Leader>so :w<CR>:so $MYVIMRC<CR> 
-nmap <Leader>qq :q!<cr>
+nmap <Leader>qq :bd<cr>
 nmap <Leader>qa :qa!<cr>
-" imap <C-w> <ESC>:q<cr>
-" map <C-w> :q<cr>
-" Save File
-imap <C-s> <ESC>:w<cr>
-map <C-s> :w<cr>
+
 
 map <leader>aa :e ~/.aliases<cr>
 imap jj <ESC>
@@ -144,11 +153,6 @@ vnoremap <D-/> :Commentary<CR>j
 map <Leader>ta :e ~/Code/Angular/treatanyone_app<CR><CR>
 map <Leader>fm :e ~/Code/flexmart<CR>
 
-"----------- Splits ---------------
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-noremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
 
 " ---------- Tabs ------------
 noremap <leader>1 1gt
@@ -171,6 +175,5 @@ nnoremap <C-b> :call CocAction('jumpDefinition', 'drop')<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
-nnoremap <leader>M <C-w>_<C-w>|
 nnoremap <D-b> :call CocAction('jumpDefinition', 'drop')<CR>
 
