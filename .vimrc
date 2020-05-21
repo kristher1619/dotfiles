@@ -101,19 +101,16 @@ set noerrorbells visualbell t_vb=               			"No damn bells!
 set splitbelow            				"New window will be added below
 set splitright
 
-
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-
-
 nnoremap <Leader>s= <C-w>=
 nnoremap <Leader>s+ <C-w>+
 nnoremap <Leader>s- <C-w>-
 nnoremap <Leader>sm  <C-w>\|<C-w>_
-nnoremap <C-m>m  <C-w>\|<C-w>_
+nnoremap <Leader>v  :vsp<cr>
 
 au! BufWritePost $MYVIMRC source % "Auto load vimrc after changed
 
@@ -177,3 +174,10 @@ nnoremap <leader>m :Marks<CR>
 
 nnoremap <D-b> :call CocAction('jumpDefinition', 'drop')<CR>
 
+
+"-- FOLDING --
+set foldmethod=syntax "syntax highlighting items specify folds
+set foldcolumn=1 "defines 1 col at window left, to indicate folding
+let javaScript_fold=1 "activate folding by JS syntax
+let php_fold=1 "activate folding by php syntax
+set foldlevelstart=99 "start file with all folds opened
