@@ -25,9 +25,7 @@ Plug 'tomtom/tlib_vim'
 Plug 'SirVer/ultisnips'
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
-Plug 'crusoexia/vim-monokai'
-Plug 'Quramy/vim-js-pretty-template'
-Plug 'pangloss/vim-javascript'
+Plug 'mattn/emmet-vim'
 " Plug 'vim-syntastic/syntastic'
 
 
@@ -116,6 +114,7 @@ au! BufWritePost $MYVIMRC source % "Auto load vimrc after changed
 
 au FocusLost * :wa "Auto save when focus is lost
 
+set nohlsearch
 "--------------------- Key Map -------------------------
 map <Leader>ev :vsplit $MYVIMRC<cr>
 map <Leader>ep :tabedit ~/.config/nvim/plugins/<cr>
@@ -135,7 +134,7 @@ imap kk <ESC>:w<CR>
 nnoremap <Leader>U viwU<esc>
 nnoremap <Leader>u viwu<Esc>
 
-map <Leader>R :Gsearch<cr>
+nnoremap <Leader>R :Gsearch<cr>
 
 "-------------- Comments ----------------
 " nnoremap <space>/ :Commentary<CR>j
