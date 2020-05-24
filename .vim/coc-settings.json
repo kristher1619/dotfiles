@@ -5,12 +5,13 @@
     "json",
     "scss",
     "css",
-    "php"
+    "php",
+    "vue"
   ],
   "eslint.options": {
     "configFile": ".eslintrc.js"
   },
-  "eslint.filetypes": ["javascript", "typescript"],
+  "eslint.filetypes": ["javascript", "typescript", "vue"],
   "prettier.eslintIntegration": true,
   "suggest.maxCompleteItemCount": 10,
   "suggest.noselect": false,

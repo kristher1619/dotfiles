@@ -26,6 +26,7 @@ Plug 'SirVer/ultisnips'
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
 Plug 'mattn/emmet-vim'
+Plug 'storyn26383/vim-vue'
 " Plug 'vim-syntastic/syntastic'
 
 
