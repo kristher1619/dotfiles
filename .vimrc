@@ -1,11 +1,12 @@
 call plug#begin('~/.vim/plugged')
 Plug 'kaicataldo/material.vim'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-vinegar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'leafOfTree/vim-vue-plugin'
 Plug 'editorconfig/editorconfig-vim'
-" Plug 'liuchengxu/vim-which-key'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'airblade/vim-rooter'
@@ -27,30 +28,21 @@ Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
 Plug 'mattn/emmet-vim'
 Plug 'storyn26383/vim-vue'
-" Plug 'vim-syntastic/syntastic'
 
 
 call plug#end()
-
-" -------------- Vim Sytastic ------------
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-" let g:sytastic_typescript_checkers = ['typescript', 'coc']
-
-" --------GReplace-----------
 set grepprg=ag
 
 let g:grep_cmd_opts = '--line-numbers --no-heading'
+
 "----------- PHP Docs -----------
 
 let g:pdv_template_dir = $HOME ."/.vim/plugged/pdv/templates"
 nnoremap <Leader>d :call pdv#DocumentWithSnip()<CR>
+
+"------------Vim Syntax highlight----------
+
+let g:vim_vue_plugin_load_full_syntax=1
 "-------------UltiSnips----------- 
 
 let g:UltiSnipsExpandTrigger="<tab>"
@@ -71,8 +63,8 @@ so ~/.config/nvim/plugins/material.vim
 so ~/.config/nvim/plugins/nerdtree.vim
 so ~/.config/nvim/plugins/coc.vim
 so ~/.config/nvim/plugins/terminal.vim
-" so ~/.config/nvim/plugins/which-key.vim
 so ~/.config/nvim/plugins/fzf.vim
+so ~/.config/nvim/plugins/airline.vim
 
 "------------ COC Commands -------------
 nnoremap <leader>es :CocCommand eslint.executeAutofix<CR>
@@ -137,6 +129,16 @@ nnoremap <Leader>u viwu<Esc>
 
 nnoremap <Leader>R :Gsearch<cr>
 
+
+
+nnoremap yy yi
+
+
+
+"--------- Buffers ------------
+nnoremap z[ :bprev<cr>
+nnoremap z] :bnext<cr>
+
 "-------------- Comments ----------------
 " nnoremap <space>/ :Commentary<CR>j
 nnoremap <c-_> :Commentary<CR>j
@@ -148,11 +150,10 @@ vnoremap <D-/> :Commentary<CR>j
 
 " ----------- Projects Directory  ------------------
 map <Leader>ta :e ~/Code/Angular/treatanyone_app<CR><CR>
-map <Leader>fm :e ~/Code/flexmart<CR>
+map <Leader>fm :e ~/Code/Laravel/flexmart-auth<CR>
 
 
 " ---------- Tabs ------------
-noremap <leader>1 1gt
 noremap <leader>1 1gt
 noremap <leader>2 2gt
 noremap <leader>3 3gt
@@ -172,7 +173,6 @@ nnoremap <C-b> :call CocAction('jumpDefinition', 'drop')<CR>
 nnoremap <leader>t :Tags<CR>
 nnoremap <leader>m :Marks<CR>
 
-nnoremap <D-b> :call CocAction('jumpDefinition', 'drop')<CR>
 
 
 "-- FOLDING --
@@ -180,4 +180,5 @@ set foldmethod=syntax "syntax highlighting items specify folds
 set foldcolumn=1 "defines 1 col at window left, to indicate folding
 let javaScript_fold=1 "activate folding by JS syntax
 let php_fold=1 "activate folding by php syntax
+let html_fold=1 "activate folding by html syntax
 set foldlevelstart=99 "start file with all folds opened

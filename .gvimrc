@@ -8,7 +8,7 @@ endif
 
 "--------------GUIOptions-------------"
 set macligatures					"Fancy Symbols
-set guifont=Fira_Code:h15
+set guifont=FiraCode_Nerd_Font:h15
 set guioptions-=l					"Disable GUI Scrollbars
 set guioptions-=L
 set guioptions-=r
