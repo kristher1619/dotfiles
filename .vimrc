@@ -5,7 +5,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-vinegar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'leafOfTree/vim-vue-plugin'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -26,9 +25,8 @@ Plug 'tomtom/tlib_vim'
 Plug 'SirVer/ultisnips'
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
-Plug 'mattn/emmet-vim'
-Plug 'storyn26383/vim-vue'
-
+" Plug 'mattn/emmet-vim'
+Plug 'leafOfTree/vim-vue-plugin'
 
 call plug#end()
 set grepprg=ag
@@ -81,13 +79,14 @@ set autoindent
 set smartindent
 set clipboard=unnamed
 set wrap!
-set linespace=15
 "--------------Search-------------"
 set hlsearch            "set search highlight
 set incsearch
 set autowriteall          "Auto Save when changing buffer
 set noerrorbells visualbell t_vb=               			"No damn bells!
 
+"auto adjust working directory
+autocmd BufEnter * silent! lcd %:p:h
 "---------------Splits and Tabs---------------
 set splitbelow            				"New window will be added below
 set splitright
@@ -128,11 +127,6 @@ nnoremap <Leader>U viwU<esc>
 nnoremap <Leader>u viwu<Esc>
 
 nnoremap <Leader>R :Gsearch<cr>
-
-
-
-nnoremap yy yi
-
 
 
 "--------- Buffers ------------

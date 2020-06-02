@@ -15,5 +15,7 @@
   "prettier.eslintIntegration": true,
   "suggest.maxCompleteItemCount": 10,
   "suggest.noselect": false,
-  "eslint.autoFixOnSave": true
+  "eslint.autoFixOnSave": true,
+  "prettier.stylelintIntegration": true,
+  "stylelint.enable": false
 }

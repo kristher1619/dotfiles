@@ -14,8 +14,7 @@ set guioptions-=L
 set guioptions-=r
 set guioptions-=R
 set guioptions-=e					"Remove the black bars at the top
-set linespace=15					"Macvim-Line Height"
-
+set linespace=22					"Macvim-Line Height"
 map <Leader>rv :tabe ~/.gvimrc<cr>
 
 " ---------- Tabs ------------

@@ -9,6 +9,8 @@
     "coc-phpls": ">=2.1.8",
     "coc-prettier": ">=1.1.14",
     "coc-snippets": ">=2.1.26",
+    "coc-stylelint": ">=1.1.0",
+    "coc-tailwindcss": ">=0.6.0",
     "coc-tsserver": ">=1.5.1",
     "coc-ultisnips": ">=1.2.3",
     "coc-vetur": ">=1.1.10",
