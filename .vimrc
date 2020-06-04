@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'kaicataldo/material.vim'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-vinegar'
 Plug 'ryanoasis/vim-devicons'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -14,8 +14,8 @@ Plug 'skwp/greplace.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'mhinz/vim-signify'
 Plug 'tpope/vim-rhubarb'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-surround' 
+"Plug 'tpope/vim-eunuch'
+"Plug 'tpope/vim-surround' 
 Plug 'junegunn/gv.vim'
 Plug 'tpope/vim-commentary'
 Plug 'terryma/vim-multiple-cursors'
@@ -86,7 +86,7 @@ set autowriteall          "Auto Save when changing buffer
 set noerrorbells visualbell t_vb=               			"No damn bells!
 
 "auto adjust working directory
-autocmd BufEnter * silent! lcd %:p:h
+" autocmd BufEnter * silent! lcd %:p:h
 "---------------Splits and Tabs---------------
 set splitbelow            				"New window will be added below
 set splitright
