@@ -17,7 +17,7 @@ alias npr='npm run'
 alias ta='$HOME/Code/Angular/treatanyone_app'
 alias ap='$HOME/Code/PHP/aunicajpay'
 alias wil='$HOME/Code/PHP/wilmaster'
-alias fm='ldir;flexmart-auth'
+alias fm='$HOME/Code/Flexmart'
 #GIT ALIASES
 alias gpf='git push origin -f'
 alias gaa='git add -u'

@@ -58,7 +58,6 @@ endif
 
 let mapleader = ','
 so ~/.config/nvim/plugins/material.vim
-so ~/.config/nvim/plugins/nerdtree.vim
 so ~/.config/nvim/plugins/coc.vim
 so ~/.config/nvim/plugins/terminal.vim
 so ~/.config/nvim/plugins/fzf.vim
@@ -91,7 +90,7 @@ set noerrorbells visualbell t_vb=               			"No damn bells!
 set splitbelow            				"New window will be added below
 set splitright
 
-nnoremap <C-h> <C-w>h
+nmap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
@@ -117,7 +116,7 @@ map <Leader>ss :w<CR>
 map <Leader>so :w<CR>:so $MYVIMRC<CR> 
 nmap <Leader>qq :bd<cr>
 nmap <Leader>qa :qa!<cr>
-
+nnoremap <Leader>en :e %:h/
 
 map <leader>aa :e ~/.aliases<cr>
 imap jj <ESC>
@@ -128,6 +127,15 @@ nnoremap <Leader>u viwu<Esc>
 
 nnoremap <Leader>R :Gsearch<cr>
 
+" In insert or command mode, move normally by using Ctrl
+imap <buffer> <silent> <C-h> <Left>
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-l> <Right>
+cnoremap <C-h> <Left>
+cnoremap <C-j> <Down>
+cnoremap <C-k> <Up>
+cnoremap <C-l> <Right>
 
 "--------- Buffers ------------
 nnoremap z[ :bprev<cr>
@@ -144,7 +152,7 @@ vnoremap <D-/> :Commentary<CR>j
 
 " ----------- Projects Directory  ------------------
 map <Leader>ta :e ~/Code/Angular/treatanyone_app<CR><CR>
-map <Leader>fm :e ~/Code/Laravel/flexmart-auth<CR>
+map <Leader>fm :e ~/Code/Flexmart<CR>
 
 
 " ---------- Tabs ------------
