@@ -41,3 +41,4 @@ alias dc='docker-compose'
 
 #OTHERS
 alias pubcopy='cat ~/.ssh/id_rsa.pub| pbcopy'
+alias config='/usr/bin/git --git-dir=/home/kristher/.cfg/ --work-tree=/home/kristher'
