@@ -61,7 +61,7 @@ so ~/.config/nvim/plugins/material.vim
 so ~/.config/nvim/plugins/coc.vim
 so ~/.config/nvim/plugins/terminal.vim
 so ~/.config/nvim/plugins/fzf.vim
-so ~/.config/nvim/plugins/airline.vim
+" so ~/.config/nvim/plugins/airline.vim
 
 "------------ COC Commands -------------
 nnoremap <leader>es :CocCommand eslint.executeAutofix<CR>
