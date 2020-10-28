@@ -50,7 +50,7 @@ let g:UltiSnipsSnippetDirectories = ["~/.vim/UltiSnips"]
 
 " UI Customizations
 syntax enable
-colorscheme material
+" colorscheme material
 set t_CO=256
 if (has("termguicolors"))
  set termguicolors
