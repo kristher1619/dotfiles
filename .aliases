@@ -60,3 +60,5 @@ alias tadev="npr hmr"
 
 #dev
 alias gpg="http-serve -c-1 -o -p 9878 ~/Code/graphql-playground"
+alias ngd="npr hmr"
+alias ngt="npr test:watch:cover"
