@@ -1,7 +1,4 @@
-alias artisan='php artisan'
-alias p='./vendor/bin/phpunit'
-alias pf='p --filter'
-alias phpunit='./vendor/bin/phpunit'
+alias artisan='php artisan' alias p='./vendor/bin/phpunit' alias pf='p --filter' alias phpunit='./vendor/bin/phpunit'
 
 #DIR
 alias ex="explorer.exe "
@@ -16,6 +13,7 @@ alias tac='$HOME/Code/TreatAnyone/treatanyone_clients_api'
 alias ap='$HOME/Code/PHP/aunicajpay'
 alias wil='$HOME/Code/PHP/wilmaster'
 alias fm='$HOME/Code/Flexmart'
+alias se='cd /mnt/c/laragon/www/simplyearth'
 
 #GIT ALIASES
 alias gpf='git push origin -f'
@@ -44,6 +42,7 @@ alias sshpaydb='forge@209.97.167.173'
 alias sshtest='ssh forge@206.189.37.184' 
 alias sshwil='ssh forge@178.128.57.225' 
 alias sshdrip='ssh forge@165.22.110.182'
+alias sshe='ssh forge@173.255.227.183'
 
 alias dc='docker-compose'
 
