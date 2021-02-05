@@ -22,7 +22,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'jiangmiao/auto-pairs'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'tobyS/vmustache'
 Plug 'tobyS/pdv'
 " Plug 'mattn/emmet-vim'
@@ -151,7 +151,8 @@ nnoremap <D-/> :Commentary<CR>j
 vnoremap <D-/> :Commentary<CR>j
 
 " ----------- Projects Directory  ------------------
-map <Leader>ta :e ~/Code/Angular/treatanyone_app<CR><CR>
+map <Leader>ta :e ~/Code/TreatAnyone/treatanyone_app<CR><CR>
+map <Leader>se :e ~/Code/SimplyEarth/simplyearth<CR><CR>
 map <Leader>fm :e ~/Code/Flexmart<CR>
 
 

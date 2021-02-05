@@ -1,6 +1,10 @@
-alias artisan='php artisan' alias p='./vendor/bin/phpunit' alias pf='p --filter' alias phpunit='./vendor/bin/phpunit'
+alias artisan='php artisan' 
+alias p='./vendor/bin/phpunit' 
+alias pf='p --filter' 
+alias phpunit='./vendor/bin/phpunit'
 
 #DIR
+alias ci="code-insiders ."
 alias ex="explorer.exe "
 alias codedir='$HOME/Code'
 alias webdir='$HOME/Code/PHP'
@@ -9,13 +13,15 @@ alias railsdir='$HOME/Code/Rails'
 alias ngdir='$HOME/Code/Angular'
 alias npr='npm run'
 alias ta='$HOME/Code/TreatAnyone/treatanyone_app'
+alias tar='$HOME/Code/TreatAnyone/treatanyone_referrer_app'
 alias tac='$HOME/Code/TreatAnyone/treatanyone_clients_api'
-alias ap='$HOME/Code/PHP/aunicajpay'
-alias wil='$HOME/Code/PHP/wilmaster'
-alias fm='$HOME/Code/Flexmart'
-alias se='cd /mnt/c/laragon/www/simplyearth'
-
+alias fm='$HOME/Code/Flexmart/'
+alias fma='$HOME/Code/Flexmart/flexmart-api'
+alias se='cd $HOME/Code/SimplyEarth/simplyearth'
+alias see='se;ci'
+alias tac="ta;ci"
 #GIT ALIASES
+
 alias gpf='git push origin -f'
 alias gaa='git add -u'
 alias gpo='git push -u origin "$(git symbolic-ref --short HEAD)"'
@@ -35,13 +41,15 @@ alias gaa='git add -u'
 alias gs='git status'
 alias gwip='git add .; g commit -m WIP'
 alias ghpr='gh pr create'
+alias ghv='gh pr view --web'
+
 #SSH ALIASES
 alias sshpay='ssh forge@209.97.166.143'
 alias sshstage='ssh forge@test.aunicajpay.com'
 alias sshpaydb='forge@209.97.167.173'
 alias sshtest='ssh forge@206.189.37.184' 
 alias sshwil='ssh forge@178.128.57.225' 
-alias sshdrip='ssh forge@165.22.110.182'
+alias sshdrip='ssh forge@104.248.147.234'
 alias sshe='ssh forge@173.255.227.183'
 
 alias dc='docker-compose'

@@ -1,9 +1,9 @@
 "Disable Print
 if has("gui_macvim")
-  macmenu &File.Print key=<nop>
-  macmenu &File.Open\.\.\. key=<nop>
-  macmenu &Edit.Find.Find\.\.\. key=<nop>
-  macmenu &Tools.Make key=<nop>
+  " macmenu &File.Print key=<nop>
+  " macmenu &File.Open\.\.\. key=<nop>
+  " macmenu &Edit.Find.Find\.\.\. key=<nop>
+  " macmenu &Tools.Make key=<nop>
 endif
 
 "--------------GUIOptions-------------"

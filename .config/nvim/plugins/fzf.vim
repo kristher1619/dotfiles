@@ -11,7 +11,7 @@ let g:fzf_history_dir = '~/.local/share/fzf-history'
 
 let g:fzf_tags_command = 'ctags -R'
 " Border color
-" let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.4,'yoffset':0.3,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
+let g:fzf_layout = {'up':'~90%', 'window': { 'width': 0.8, 'height': 0.4,'yoffset':0.3,'xoffset': 0.5, 'highlight': 'Todo', 'border': 'sharp' } }
 let $FZF_DEFAULT_OPTS = '--layout=reverse --info=inline --color fg:-1,bg:-1,hl:230,fg+:3,bg+:233,hl+:229 --color info:150,prompt:110,spinner:150,pointer:167,marker:174'
 let $FZF_DEFAULT_COMMAND="rg --files --hidden -g '!{node_modules,.git}'"
 " Customize fzf colors to match your color scheme

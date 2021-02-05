@@ -7,8 +7,14 @@ nmap <C-L> <C-W><C-L>
 let mapleader=','
 set number
 set relativenumber;
-
+set novisualbell
 nnoremap <leader>ss :action SaveDocument<CR>
 nnoremap <Leader>qq :action CloseEditor<cr>
+set clipboard+=unnamed
 
-map <Leader>ev :vsplit $MYVIMRC<cr>
+map <Leader>ev :vsplit ~/.ideavimrc<cr>
+map <Leader>v :vsplit<cr>
+set relativenumber
+nnoremap - :action ViewNavigationBar<CR>
+
+
