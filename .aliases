@@ -49,7 +49,7 @@ alias sshstage='ssh forge@test.aunicajpay.com'
 alias sshpaydb='forge@209.97.167.173'
 alias sshtest='ssh forge@206.189.37.184' 
 alias sshwil='ssh forge@178.128.57.225' 
-alias sshdrip='ssh forge@104.248.147.234'
+alias sshdrip='ssh cleaver@104.248.147.234'
 alias sshe='ssh forge@173.255.227.183'
 
 alias dc='docker-compose'
