@@ -1,10 +1,11 @@
 alias artisan='php artisan' 
+alias tink='php artisan tinker' 
 alias p='./vendor/bin/phpunit' 
 alias pf='p --filter' 
 alias phpunit='./vendor/bin/phpunit'
 
 #DIR
-alias ci="code-insiders ."
+alias ci="code ."
 alias ex="explorer.exe "
 alias codedir='$HOME/Code'
 alias webdir='$HOME/Code/PHP'
@@ -12,12 +13,15 @@ alias ldir='$HOME/Code/Laravel'
 alias railsdir='$HOME/Code/Rails'
 alias ngdir='$HOME/Code/Angular'
 alias npr='npm run'
+alias nw='npm run watch'
 alias ta='$HOME/Code/TreatAnyone/treatanyone_app'
 alias tar='$HOME/Code/TreatAnyone/treatanyone_referrer_app'
 alias tac='$HOME/Code/TreatAnyone/treatanyone_clients_api'
 alias fm='$HOME/Code/Flexmart/'
-alias fma='$HOME/Code/Flexmart/flexmart-api'
+alias fma='$HOME/Code/Flexmart/flexmart-app'
+alias fmp='$HOME/Code/Flexmart/flexmart-api'
 alias se='cd $HOME/Code/SimplyEarth/simplyearth'
+alias sd='cd $HOME/Code/SimplyEarth/simplyearth-deploy'
 alias see='se;ci'
 alias tac="ta;ci"
 #GIT ALIASES
@@ -29,11 +33,15 @@ alias gpo='git push -u origin "$(git symbolic-ref --short HEAD)"'
 alias gp='git push'
 alias gfmm='git fetch origin master:master'
 alias gpm='git pull origin master'
+alias gbm='git branch -m '
 alias grm='git rebase master'
 alias grmm='gfmm;grm'
 alias grc='git rebase --continue'
+alias gmc='git merge --continue'
 alias gri='git rebase -i '
 alias gc='git checkout'
+alias gcp='git cherry-pick'
+alias gccp='git cherry-pick --continue'
 alias gcb='git checkout -b'
 alias gcm='git commit -m '
 alias gca='git commit --amend '
@@ -70,3 +78,21 @@ alias tadev="npr hmr"
 alias gpg="http-serve -c-1 -o -p 9878 ~/Code/graphql-playground"
 alias ngd="npr hmr"
 alias ngt="npr test:watch:cover"
+
+
+#alias
+alias lh="php artisan lighthouse"
+alias lhm="php artisan lighthouse:mutation"
+alias lhq="php artisan lighthouse:query"
+alias lhw="php artisan lighthouse:print-schema -W"
+alias lhc="php artisan lighthouse:print-schema | pbcopy"
+
+
+
+
+#URL
+alias zube='open https://tinyurl.com/c9c24f99'
+alias dsm="open 'https://meet.google.com/aka-afsz-piz?authuser=1'"
+alias ghta='open https://github.com/maximiliandigital/treatanyone_app/pulls'
+alias ghse='open https://github.com/SimplyEarth/simplyearth/pulls'
+

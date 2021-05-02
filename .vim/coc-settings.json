@@ -1,7 +1,5 @@
 {
   "coc.preferences.formatOnSaveFiletypes": [
-    "javascript",
-    "typescript",
     "json",
     "scss",
     "css",
@@ -11,7 +9,11 @@
   "eslint.options": {
     "configFile": ".eslintrc.js"
   },
-  "eslint.filetypes": ["javascript", "typescript", "vue"],
+  "eslint.filetypes": [
+    "javascript",
+    "typescript",
+    "vue"
+  ],
   "prettier.eslintIntegration": true,
   "suggest.maxCompleteItemCount": 10,
   "suggest.noselect": false,
