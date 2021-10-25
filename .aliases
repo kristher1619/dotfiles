@@ -14,14 +14,17 @@ alias railsdir='$HOME/Code/Rails'
 alias ngdir='$HOME/Code/Angular'
 alias npr='npm run'
 alias nw='npm run watch'
+alias ns='npm run serve'
 alias ta='$HOME/Code/TreatAnyone/treatanyone_app'
+alias rp='$HOME/Code/TreatAnyone/treatanyone_referrer_app'
 alias tar='$HOME/Code/TreatAnyone/treatanyone_referrer_app'
 alias tac='$HOME/Code/TreatAnyone/treatanyone_clients_api'
 alias fm='$HOME/Code/Flexmart/'
 alias fma='$HOME/Code/Flexmart/flexmart-app'
 alias fmp='$HOME/Code/Flexmart/flexmart-api'
 alias se='cd $HOME/Code/SimplyEarth/simplyearth'
-alias sd='cd $HOME/Code/SimplyEarth/simplyearth-deploy'
+alias sa='cd $HOME/Code/SimplyEarth/simplyearth-admin'
+alias saf='cd $HOME/Code/SimplyEarth/simplyearth-admin/frontend'
 alias see='se;ci'
 alias tac="ta;ci"
 #GIT ALIASES
@@ -50,6 +53,8 @@ alias gaa='git add -u'
 alias gs='git status'
 alias gwip='git add .; g commit -m WIP'
 alias ghpr='gh pr create'
+alias ghc='gh pr checkout'
+alias ghm='gh pr merge'
 alias ghv='gh pr view --web'
 
 #SSH ALIASES
@@ -70,6 +75,7 @@ alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 
 #treatanyone
 alias tacover="http-serve -c-1 -o -p 9875 ./coverage/treatanyone-app"
+alias rpcover="http-serve -c-1 -o -p 9875 ./coverage/referrer-portal"
 alias tatest="npr test:watch:cover"
 alias tadev="npr hmr"
 
