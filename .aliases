@@ -27,6 +27,8 @@ alias sa='cd $HOME/Code/SimplyEarth/simplyearth-admin'
 alias saf='cd $HOME/Code/SimplyEarth/simplyearth-admin/frontend'
 alias see='se;ci'
 alias tac="ta;ci"
+alias ap='cd $HOME/Code/SolGen/aphrodite'
+alias lo='cd $HOME/Code/SolGen/loanhomi_v2'
 #GIT ALIASES
 
 alias gpf='git push origin -f'
@@ -83,6 +85,7 @@ alias tadev="npr hmr"
 #dev
 alias gpg="http-serve -c-1 -o -p 9878 ~/Code/graphql-playground"
 alias ngd="npr hmr"
+alias ngs="ng serve"
 alias ngt="npr test:watch:cover"
 
 
@@ -102,3 +105,10 @@ alias dsm="open 'https://meet.google.com/aka-afsz-piz?authuser=1'"
 alias ghta='open https://github.com/maximiliandigital/treatanyone_app/pulls'
 alias ghse='open https://github.com/SimplyEarth/simplyearth/pulls'
 
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+
+alias php73="/opt/homebrew/Cellar/php@7.3/7.3.33_1/bin/php"
+alias php74="/opt/homebrew/Cellar/php@7.4/7.4.26_1/bin/php"
+
+alias composer73="php73 /usr/local/bin/composer"
+alias composer74="php74 /usr/local/bin/composer"
