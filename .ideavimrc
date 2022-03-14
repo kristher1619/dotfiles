@@ -7,7 +7,7 @@ nmap <C-L> <C-W><C-L>
 let mapleader=','
 set number
 set relativenumber;
-set novisualbell
+set visualbell
 set noerrorbells
 nnoremap <leader>ss :action SaveDocument<CR>
 nnoremap <Leader>qq :action CloseEditor<cr>
