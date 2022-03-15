@@ -13,6 +13,6 @@
     "coc-tsserver": ">=1.9.14",
     "coc-ultisnips": ">=1.2.3",
     "coc-vetur": ">=1.2.5",
-    "coc-vimlsp": ">=0.10.2"
+    "coc-vimlsp": ">=0.12.5"
   }
 }

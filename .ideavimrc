@@ -16,6 +16,6 @@ set clipboard+=unnamed
 map <Leader>ev :vsplit ~/.ideavimrc<cr>
 map <Leader>v :vsplit<cr>
 set relativenumber
-nnoremap - :action ViewNavigationBar<CR>
+#nnoremap - :action ViewNavigationBar<CR>
 
 
