@@ -1,0 +1,4 @@
+source ~/.aliases
+
+export PATH=$PATH:~/.composer/vendor/bin/
+export GIT_EDITOR=vim
